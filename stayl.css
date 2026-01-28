@@ -14,10 +14,21 @@ header {
     z-index: 1;
     position: sticky;
     top: 0;
+    margin-top: 20px;
     background-color: #000000;
     backdrop-filter: blur(10);
     padding-bottom: 20px;
-    padding-top: 20px;
+    animation: headAnim 1.3s ease-in-out forwards;
+}
+@keyframes headAnim {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 body {
     background-color: black;
@@ -156,9 +167,10 @@ li:hover {
     transition: 1s;
 }
 .my__photo {
-    width: 566px;
+    width: 500px;
     border-radius: 50px;
-    margin-left: 140px;
+    margin-left: 180px;
+    margin-top: 50px;
     transition: 1s;
 }
 .my__photo:hover {
@@ -262,7 +274,7 @@ span {
     margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 40px;
+    gap: 30px;
 }
 
 .tech-card {
@@ -340,6 +352,7 @@ span {
 
 .inp__info {
     text-align: center;
+    justify-content: center;
     gap: 50px;
 }
 .name {
@@ -351,7 +364,7 @@ span {
     color: rgba(149, 149, 149, 1);
 }
 .email {
-    margin-left: 50px;
+    margin-left: 10px;
     border-radius: 8px;
     padding: 14px 423px 14px 24px;
     margin-bottom: 20px;
@@ -360,6 +373,7 @@ span {
     color: rgba(149, 149, 149, 1);
 }
 .phone {
+    margin-left: -10px;
     border-radius: 8px;
     padding: 14px 423px 14px 24px;
     margin-bottom: 30px;
@@ -368,9 +382,9 @@ span {
     color: rgba(149, 149, 149, 1);
 }
 .inp__group {
-    margin-left: 50px;
+    margin-left: 10px;
     border-radius: 8px;
-    padding: 14px 435px 14px 24px;
+    padding: 14px 423px 14px 24px;
     margin-bottom: 30px;
     border-color: rgba(244, 236, 236, 0.432);
     background-color: rgba(245, 245, 245, 0);
@@ -384,9 +398,9 @@ span {
     color: rgba(149, 149, 149, 1);
 }
 .project {
-    margin-left: 50px;
+    margin-left: 10px;
     border-radius: 8px;
-    padding: 14px 423px 122px 24px;
+    padding: 14px 423px 14px 24px;
     border-color: rgba(244, 236, 236, 0.523);
     background-color: rgba(245, 245, 245, 0);
     color: rgba(149, 149, 149, 1);
@@ -405,8 +419,8 @@ span {
     color: white;
     text-align: center;
     font-size: 48px;
-    padding-top: 100px;
-    padding-bottom: 20px;
+    padding-top: 200px;
+    padding-bottom: 50px;
 }
 .bilan {
     color: white;
@@ -428,9 +442,10 @@ span {
 }
 .foter__img {
     width: 200px;
-    margin-left: 600px;
     padding-top: 100px;
     padding-bottom: 50px;
+    display: block;
+    margin: 0 auto;
 }
 .footer__ul {
     justify-content: center;
@@ -553,8 +568,72 @@ span {
 .project__tech {
     padding-left: 30px;
 }
+
 .project__img {
     padding-left: 30px;
     padding-bottom: 20px;
     padding-top: 10px;
+}
+
+.my {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.project__my {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+.project__now {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.project__info:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.famliy__my {
+    width: 550px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+.famliy__my:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.famliy__my:hover {
+    box-shadow:
+        rgba(3, 66, 255, 0.25) 0px 80px 55px,
+        rgba(4, 8, 244, 0.12) 0px -12px 30px,
+        rgba(14, 1, 255, 0.12) 0px 20px 100px,
+        rgba(21, 1, 246, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px 100px 54px;
+}
+
+.famliy__info {
+    margin-left: 220px;
+    padding-top: 100px;
+    font-size: 28px;
+    color: white;
+}
+
+.my__famliy {
+    display: flex;
+}
+
+.fanliy__my {
+    font-size: 38px;
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 150px;
 }
